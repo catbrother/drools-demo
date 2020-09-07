@@ -1,4 +1,4 @@
-package com.desmart.drools.Config;
+package com.desmart.drools.config;
 
 import com.desmart.drools.util.DroolsUtil;
 import org.kie.api.KieBase;
