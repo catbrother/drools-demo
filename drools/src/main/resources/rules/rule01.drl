@@ -1,0 +1,15 @@
+package rules
+import com.desmart.drools.domain.People
+dialect  "java"
+
+rule "rule01-01"
+    when
+        $p : People(name == "杨秉毅" && sex == "男")
+    then
+end
+
+rule "rule01-02"
+    when
+        $p : People(age == 100)
+    then
+end

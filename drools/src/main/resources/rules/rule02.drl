@@ -1,0 +1,18 @@
+package rules
+dialect "java"
+
+rule "rule02-01"
+salience 999
+    when
+        $count:Integer($count == null || $count == 0)
+    then
+        System.out.println("异常(\"根据"+123+"\")");
+end
+
+rule "rule02-02"
+salience 998
+    when
+        $count : Integer($count != 1)
+    then
+        System.out.println("异常(\"根据"+321+"\")");
+end
